@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="474dp" >
+
+        <TextView
+            android:id="@+id/tvTripName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:text="Wie soll der Trip heißen?" />
+        
+        <TextView
+            android:id="@+id/tvTripNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bConfirmNewTrip"
+            android:layout_below="@+id/etTripName"
+            android:layout_marginTop="5pt"
+            android:text="Kommentar:" />
+
+        <CheckBox
+            android:id="@+id/cbActivateTracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/etTripNote"
+            android:layout_marginTop="26dp"
+            android:text="GPS Tracking aktivieren ?" />
+
+        <CheckBox
+            android:id="@+id/cbActivatePicVidMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cbActivateTracking"
+            android:text="Fotos &amp; Videos in der Karte markieren?" />
+
+        <CheckBox
+            android:id="@+id/cbActivateCompass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cbActivatePicVidMarker"
+            android:text="Kompass anzeigen?" />
+
+        <CheckBox
+            android:id="@+id/cbActivateZoomButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cbActivateCompass"
+            android:text="Zoom Buttons anzeigen?" />
+
+        <EditText
+            android:id="@+id/etTripName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvTripName"
+            android:ems="10"
+            android:hint="Gib hier den Trip Namen ein" >
+        </EditText>
+        
+		<EditText
+            android:id="@+id/etTripNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvTripNote"
+            android:ems="10"
+            android:hint="Gib hier den Trip Namen ein" >
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/cbActivateFixMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cbActivateZoomButtons"
+            android:layout_below="@+id/cbActivateZoomButtons"
+            android:text="Soll Norden immer oben sein?" />
+
+        
+
+        <Button
+            android:id="@+id/bConfirmNewTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/cbActivateCompass"
+            android:layout_below="@+id/cbActivateFixMap"
+            android:layout_marginTop="15dp"
+            android:text="Neuen Trip starten!" />
+
+        <Button
+            android:id="@+id/bHideKeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/etTripNote"
+            android:layout_alignParentRight="true"
+            android:text="Eingabe fertig"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
